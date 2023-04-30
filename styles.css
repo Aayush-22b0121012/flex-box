@@ -1,7 +1,88 @@
+{
+  margin:0;
+  padding:0;
+  box-sixing:border-box;
+}
 body{
   background-image:url("https://img.freepik.com/free-vector/5g-networking-technology-background-with-blue-digital-line_53876-119505.jpg?w=1060&t=st=1682843107~exp=1682843707~hmac=e581b70dc97de3776cde8311c3d2069c480ac774d24526697c69bde16fd49202");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'open sans',sans-serif;
+}
+header{
+  height: 120px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+}
+ul li a{
+  padding: 20px;
+  text-decoration: none;
+  color:black;
+  display: inline-block;
+}
+li a::after{
+  content: '';
+  display: block;
+  height: 5px;
+  width:0;
+  background: plum;
+  transition:all .5s;
+}
+li a:hover::after{
+  width:100px;
+}
+main{
+  display: flex;
+  height:calc(100vh-100px);
+  align-items: center;
+  justify-content: center;
+}
+main h1{
+  width:30px;
+  color:yellow;
+  text-transform: uppercase;
+}
+main h2{
+  font: size 14px;
+  font-weight: 400;
+  color:yellowgreen;
+}
+main p{
+  font-size:14px;
+  font-weight: 400;
+  color:royalblue;
+  line-height:31.5px;
+  margin:30px;
+}
+.cta{
+  padding: 15px 30px;
+  background: #c4c4f7;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+.signup-btn{
+  padding: 15px 30px;
+  background: #c4c4f7;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 
+logo{
+  size-adjust: 4px;
+}
 
+  
